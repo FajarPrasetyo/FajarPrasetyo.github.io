@@ -1,5 +1,5 @@
 {
-  "name": "myportofolio_project",
+  "name": "fatpsyo",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,9 +7,14 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Fajar tri prasetyo",
   "license": "ISC",
   "devDependencies": {
+    "prettier": "^2.8.7",
+    "prettier-plugin-tailwindcss": "^0.2.7",
     "tailwindcss": "^3.3.1"
+  },
+  "dependencies": {
+    "particles.js": "^2.0.0"
   }
 }
