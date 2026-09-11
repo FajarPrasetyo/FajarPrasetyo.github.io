@@ -1,0 +1,56 @@
+1:"$Sreact.fragment"
+2:I[5841,["592","static/chunks/c15bf2b0-ade193bbed4bf07e.js","676","static/chunks/676-610d3c11c097a7e6.js","277","static/chunks/277-f8346aef5d99a351.js","622","static/chunks/622-a33b7ad5c2151750.js","177","static/chunks/app/layout-688688814c0601e6.js"],"ReactLenis"]
+3:I[7969,["592","static/chunks/c15bf2b0-ade193bbed4bf07e.js","676","static/chunks/676-610d3c11c097a7e6.js","277","static/chunks/277-f8346aef5d99a351.js","622","static/chunks/622-a33b7ad5c2151750.js","177","static/chunks/app/layout-688688814c0601e6.js"],"default"]
+4:I[7555,[],""]
+5:I[2350,["592","static/chunks/c15bf2b0-ade193bbed4bf07e.js","676","static/chunks/676-610d3c11c097a7e6.js","397","static/chunks/app/template-5112d1d7262f8084.js"],"default"]
+6:I[1295,[],""]
+7:I[5904,["592","static/chunks/c15bf2b0-ade193bbed4bf07e.js","676","static/chunks/676-610d3c11c097a7e6.js","277","static/chunks/277-f8346aef5d99a351.js","622","static/chunks/622-a33b7ad5c2151750.js","177","static/chunks/app/layout-688688814c0601e6.js"],"default"]
+8:I[3195,["592","static/chunks/c15bf2b0-ade193bbed4bf07e.js","676","static/chunks/676-610d3c11c097a7e6.js","277","static/chunks/277-f8346aef5d99a351.js","622","static/chunks/622-a33b7ad5c2151750.js","177","static/chunks/app/layout-688688814c0601e6.js"],"default"]
+9:I[540,["592","static/chunks/c15bf2b0-ade193bbed4bf07e.js","676","static/chunks/676-610d3c11c097a7e6.js","277","static/chunks/277-f8346aef5d99a351.js","622","static/chunks/622-a33b7ad5c2151750.js","177","static/chunks/app/layout-688688814c0601e6.js"],"default"]
+a:I[421,["592","static/chunks/c15bf2b0-ade193bbed4bf07e.js","676","static/chunks/676-610d3c11c097a7e6.js","277","static/chunks/277-f8346aef5d99a351.js","622","static/chunks/622-a33b7ad5c2151750.js","177","static/chunks/app/layout-688688814c0601e6.js"],"default"]
+c:I[9665,[],"OutletBoundary"]
+f:I[9665,[],"ViewportBoundary"]
+11:I[9665,[],"MetadataBoundary"]
+13:I[6614,[],""]
+:HL["/_next/static/css/a29b2dd9948b46f0.css","style"]
+0:{"P":null,"b":"KH00yMuWF068IbR1vaLUN","p":"","c":["","projects","wgnsportcenter"],"i":false,"f":[[["",{"children":["projects",{"children":[["slug","wgnsportcenter","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/a29b2dd9948b46f0.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"className":"__variable_ec6dc7 __variable_fb12db antialiased","children":["$","$L2",null,{"root":true,"options":{"lerp":0.1,"duration":1.4},"children":[["$","$L3",null,{}],["$","main",null,{"children":["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{"children":["$","$L6",null,{}]}],"templateStyles":[],"templateScripts":[],"notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"text-center pb-10 pt-16","id":"contact","children":["$","div",null,{"className":"container","children":[["$","p",null,{"className":"text-lg text-muted-foreground","children":"Have a project or collaboration in mind?"}],["$","a",null,{"href":"mailto:fajartru1515@gmail.com","className":"text-2xl sm:text-4xl md:text-5xl font-anton inline-block mt-4 mb-10 text-primary hover:underline tracking-wide","children":"fajartru1515@gmail.com"}],["$","div",null,{"className":"space-y-2","children":["$","p",null,{"className":"text-sm text-muted-foreground","children":["© ",2026," ",["$","a",null,{"href":"https://github.com/FajarPrasetyo","target":"_blank","rel":"noopener noreferrer","className":"hover:text-white transition-colors font-medium","children":"Fajar Tri Prasetyo"}],". All rights reserved."]}]}]]}]}],["$","$L7",null,{}],["$","$L8",null,{}],["$","$L9",null,{}],["$","$La",null,{}],["$","div",null,{"className":"max-xl:hidden fixed bottom-32 left-0 block","children":["$","a",null,{"href":"mailto:fajartru1515@gmail.com","className":"px-3 text-muted-foreground tracking-[1px] transition-all !bg-bottom hover:text-foreground hover:!bg-center","style":{"textOrientation":"mixed","writingMode":"vertical-rl"},"children":"fajartru1515@gmail.com"}]}]]}]}]}]]}],{"children":["projects",["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","wgnsportcenter","d"],["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$Lb","$undefined",null,["$","$Lc",null,{"children":["$Ld","$Le",null]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","Yg3xvMw8CIAnY3c2smtxj",{"children":[["$","$Lf",null,{"children":"$L10"}],null]}],["$","$L11",null,{"children":"$L12"}]]}],false]],"m":"$undefined","G":["$13","$undefined"],"s":false,"S":true}
+14:I[7256,["592","static/chunks/c15bf2b0-ade193bbed4bf07e.js","676","static/chunks/676-610d3c11c097a7e6.js","287","static/chunks/287-4a609f69f945e05f.js","869","static/chunks/869-bd77665c7c3e5b6c.js","419","static/chunks/app/projects/%5Bslug%5D/page-675e6202eb7cd8ea.js"],"default"]
+15:T471,
+      A full-stack, responsive web reservation and venue management platform engineered for WGN Sport Center to streamline court bookings, scheduling, and operational revenue tracking. <br/><br/>
+      
+      Key Features:<br/>
+      <ul>
+        <li>📅 Interactive Court Booking: Real-time schedule checker preventing double-booking across badminton/futsal courts</li>
+        <li>💳 Order & Payment Processing: Seamless workflow for booking verification and payment proof uploads</li>
+        <li>🏆 Tournament & Event Management: Showcase upcoming leagues, brackets, and venue announcements</li>
+        <li>👥 Multi-Role Administration: Dedicated dashboard for staff to approve customer bookings, manage time slots, and maintain Master Data records</li>
+      </ul><br/>
+
+      Technical Highlights:
+      <ul>
+        <li>Structured relational database normalization in MySQL ensuring optimal query performance</li>
+        <li>Clean modular backend architecture in PHP / Laravel with secure session handling</li>
+        <li>Responsive, intuitive user interface styled with modern CSS and Bootstrap</li>
+      </ul>
+      b:["$","$L14",null,{"project":{"title":"WGN Sport Center Platform","slug":"wgnsportcenter","sourceCode":"https://github.com/FajarPrasetyo/wgnsportcenter","year":2025,"description":"$15","role":"\n      Web Developer <br/>\n      <ul>\n        <li>Designed normalized relational database schema (MySQL) for high-traffic booking transactions</li>\n        <li>Engineered real-time court availability logic and dynamic slot reservation workflows</li>\n        <li>Constructed comprehensive administrative dashboard and reporting modules</li>\n      </ul>\n      ","techStack":["PHP","Laravel","MySQL","JavaScript","Bootstrap","HTML5 / CSS3"],"thumbnail":"/projects/thumbnail/wgnsportcenter.png","longThumbnail":"/projects/long/wgnsportcenter.png","images":["/projects/images/wgn-dashboard.png","/projects/images/wgn-dashboard2.png","/projects/images/wgn-lapangan.png","/projects/images/wgn-pesanan.png"]}}]
+10:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+d:null
+e:null
+16:T471,
+      A full-stack, responsive web reservation and venue management platform engineered for WGN Sport Center to streamline court bookings, scheduling, and operational revenue tracking. <br/><br/>
+      
+      Key Features:<br/>
+      <ul>
+        <li>📅 Interactive Court Booking: Real-time schedule checker preventing double-booking across badminton/futsal courts</li>
+        <li>💳 Order & Payment Processing: Seamless workflow for booking verification and payment proof uploads</li>
+        <li>🏆 Tournament & Event Management: Showcase upcoming leagues, brackets, and venue announcements</li>
+        <li>👥 Multi-Role Administration: Dedicated dashboard for staff to approve customer bookings, manage time slots, and maintain Master Data records</li>
+      </ul><br/>
+
+      Technical Highlights:
+      <ul>
+        <li>Structured relational database normalization in MySQL ensuring optimal query performance</li>
+        <li>Clean modular backend architecture in PHP / Laravel with secure session handling</li>
+        <li>Responsive, intuitive user interface styled with modern CSS and Bootstrap</li>
+      </ul>
+      12:[["$","title","0",{"children":"WGN Sport Center Platform | fajarprasetyo.site"}],["$","meta","1",{"name":"description","content":"$16"}],["$","meta","2",{"name":"author","content":"Fajar Tri Prasetyo"}],["$","meta","3",{"name":"keywords","content":"Fajar Tri Prasetyo,Fajar Prasetyo,Web Developer,Software Engineer,Frontend Developer,Full-Stack Developer,Laravel,PHP,React.js,Next.js,Tailwind CSS,Portfolio"}]]
