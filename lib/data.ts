@@ -151,6 +151,7 @@ export const PROJECTS: IProject[] = [
             '/projects/images/wgn-lapangan.png',
             '/projects/images/wgn-pesanan.png',
         ],
+        promoVideo: '/projects/videos/wgnsportcenter-promo.mp4',
     },
     {
         title: 'San Komputer Inventory',
@@ -191,6 +192,7 @@ export const PROJECTS: IProject[] = [
             '/projects/images/san-komputer-create.png',
             '/projects/images/san-komputer-profile.png',
         ],
+        promoVideo: '/projects/videos/sankomputer-promo.mp4',
     },
     {
         title: 'Bridge Capacity ML System',
@@ -230,6 +232,7 @@ export const PROJECTS: IProject[] = [
             '/projects/images/bridge-ml-designstrength.png',
             '/projects/images/bridge-ml-responratio.png',
         ],
+        promoVideo: '/projects/videos/jembatan-crispdm-promo.mp4',
     },
     {
         title: 'BlurryFace Portfolio v1',

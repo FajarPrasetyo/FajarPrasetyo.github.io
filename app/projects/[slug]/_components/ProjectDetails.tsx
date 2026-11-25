@@ -1,12 +1,13 @@
 'use client';
 import parse from 'html-react-parser';
 import ArrowAnimation from '@/components/ArrowAnimation';
+import ProjectGallery from '@/components/ProjectGallery';
 import TransitionLink from '@/components/TransitionLink';
 import { IProject } from '@/types';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
-import { ArrowLeft, ExternalLink, Github } from 'lucide-react';
+import { ArrowLeft, Github, ExternalLink } from 'lucide-react';
 import { useRef } from 'react';
 
 interface Props {
@@ -179,26 +180,48 @@ const ProjectDetails = ({ project }: Props) => {
                     className="fade-in-later relative flex flex-col gap-2 max-w-[800px] mx-auto"
                     id="images"
                 >
-                    {project.images.map((image) => (
-                        <div
-                            key={image}
-                            className="group relative w-full aspect-[750/400] bg-background-light"
-                            style={{
-                                backgroundImage: `url(${image})`,
-                                backgroundSize: 'cover',
-                                backgroundPosition: 'center 50%',
-                                backgroundRepeat: 'no-repeat',
-                            }}
-                        >
-                            <a
-                                href={image}
-                                target="_blank"
-                                className="absolute top-4 right-4 bg-background/70 text-foreground size-12 inline-flex justify-center items-center transition-all opacity-0 hover:bg-primary hover:text-primary-foreground group-hover:opacity-100"
+                    {/* Promo Video */}
+                    {project.promoVideo && (
+                        <div className="w-full mb-6">
+                            <div
+                                className="relative rounded-2xl overflow-hidden border border-white/10"
+                                style={{
+                                    background:
+                                        'linear-gradient(135deg, rgba(255,255,255,0.07) 0%, rgba(255,255,255,0.02) 100%)',
+                                    backdropFilter: 'blur(12px)',
+                                    WebkitBackdropFilter: 'blur(12px)',
+                                    boxShadow:
+                                        '0 8px 32px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.08)',
+                                }}
                             >
-                                <ExternalLink />
-                            </a>
+                                <div className="flex items-center justify-between px-5 py-3 border-b border-white/10">
+                                    <span
+                                        className="text-xs font-anton uppercase tracking-widest"
+                                        style={{ color: 'rgba(255,255,255,0.5)' }}
+                                    >
+                                        Promo Video
+                                    </span>
+                                    <span
+                                        className="text-xs font-mono"
+                                        style={{ color: 'rgba(255,255,255,0.35)' }}
+                                    >
+                                        ▶ Autoplay · Loop
+                                    </span>
+                                </div>
+                                <video
+                                    autoPlay
+                                    loop
+                                    muted
+                                    playsInline
+                                    className="w-full block"
+                                    src={project.promoVideo}
+                                />
+                            </div>
                         </div>
-                    ))}
+                    )}
+
+                    {/* Screenshot Gallery */}
+                    <ProjectGallery images={project.images} />
                 </div>
             </div>
         </section>
