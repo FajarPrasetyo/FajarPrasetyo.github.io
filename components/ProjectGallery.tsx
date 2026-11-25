@@ -177,15 +177,15 @@ const ProjectGallery = ({ images }: ProjectGalleryProps) => {
                     </a>
 
                     {/* Caption */}
-                    <div className="absolute inset-x-0 bottom-0 z-[2] bg-gradient-to-t from-black/70 via-black/20 to-transparent px-4 pb-3 pt-10">
-                        <p className="truncate text-xs capitalize tracking-wide text-white/70">
+                    <div className="absolute inset-x-0 bottom-0 z-[2] bg-gradient-to-t from-black/85 via-black/30 to-transparent px-4 pb-3 pt-10">
+                        <p className="truncate text-xs capitalize tracking-wide text-white/85">
                             {fileName(images[current])}
                         </p>
                     </div>
                 </div>
 
                 {/* Thumbnail rail */}
-                <div className="flex items-center gap-2 overflow-x-auto px-4 py-3 [scrollbar-width:thin]">
+                <div className="flex items-center gap-2 overflow-x-auto border-t border-white/5 bg-black/20 px-4 py-3 [scrollbar-width:thin]">
                     {images.map((image, index) => (
                         <button
                             key={image}
