@@ -55,11 +55,11 @@ const Certificates = () => {
                     </span>
                 </div>
 
-                <div className="grid gap-6 md:grid-cols-2">
+                <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                     {MY_CERTIFICATES.map((certificate) => (
                         <article
                             key={certificate.title}
-                            className="certificate-card group relative overflow-hidden rounded-2xl border border-white/10 transition-all duration-500 hover:border-primary/40"
+                            className="certificate-card group relative flex flex-col overflow-hidden rounded-2xl border border-white/10 transition-all duration-500 hover:border-primary/40"
                             style={{
                                 background:
                                     'linear-gradient(135deg, rgba(255,255,255,0.07) 0%, rgba(255,255,255,0.015) 100%)',
@@ -69,7 +69,7 @@ const Certificates = () => {
                                     '0 8px 32px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.06)',
                             }}
                         >
-                            <div className="relative h-60 overflow-hidden sm:h-64">
+                            <div className="relative h-56 shrink-0 overflow-hidden sm:h-60">
                                 <Image
                                     src={certificate.image}
                                     alt={`${certificate.title} certificate`}
@@ -100,10 +100,10 @@ const Certificates = () => {
                                 />
                             </div>
 
-                            <div className="relative -mt-8 p-6">
+                            <div className="relative -mt-8 flex flex-1 flex-col p-6">
                                 <div className="flex items-start justify-between gap-4">
                                     <div>
-                                        <h3 className="font-anton text-2xl leading-none md:text-[28px]">
+                                        <h3 className="font-anton text-2xl leading-tight">
                                             {certificate.title}
                                         </h3>
                                         <p className="mt-2 text-sm text-muted-foreground">
@@ -136,19 +136,21 @@ const Certificates = () => {
                                     ))}
                                 </div>
 
-                                <div className="mt-6 flex items-center justify-between gap-4 border-t border-white/10 pt-4">
-                                    <button
-                                        type="button"
-                                        onClick={() => setActive(certificate)}
-                                        className="inline-flex items-center gap-2 text-sm transition-colors hover:text-primary"
-                                    >
-                                        View credential
-                                        <ArrowUpRight size={15} />
-                                    </button>
+                                <div className="mt-auto pt-6">
+                                    <div className="flex items-center justify-between gap-4 border-t border-white/10 pt-4">
+                                        <button
+                                            type="button"
+                                            onClick={() => setActive(certificate)}
+                                            className="inline-flex items-center gap-2 text-sm transition-colors hover:text-primary"
+                                        >
+                                            View credential
+                                            <ArrowUpRight size={15} />
+                                        </button>
 
-                                    <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                                        <CalendarDays size={13} />
-                                        {certificate.date}
+                                        <div className="flex items-center gap-2 text-xs text-muted-foreground">
+                                            <CalendarDays size={13} />
+                                            {certificate.date}
+                                        </div>
                                     </div>
                                 </div>
                             </div>
