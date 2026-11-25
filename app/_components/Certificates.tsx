@@ -182,7 +182,7 @@ const Certificates = () => {
                             </button>
 
                             <div
-                                className="relative flex min-h-[220px] flex-1 items-center justify-center overflow-hidden bg-black/40 p-4 sm:p-6"
+                                className="relative flex min-h-[220px] shrink-0 flex-1 items-center justify-center overflow-hidden bg-black/40 p-4 sm:p-6"
                                 data-lenis-prevent
                             >
                                 <Image
@@ -204,7 +204,7 @@ const Certificates = () => {
                             </div>
 
                             <aside
-                                className="w-full shrink-0 overflow-y-auto p-6 md:w-[320px] md:max-h-[92dvh]"
+                                className="min-h-0 w-full flex-1 overflow-y-auto p-6 md:w-[320px] md:flex-none md:shrink-0 md:max-h-[92dvh]"
                                 data-lenis-prevent
                             >
                                 <div className="mb-6 flex items-start justify-between gap-4">
