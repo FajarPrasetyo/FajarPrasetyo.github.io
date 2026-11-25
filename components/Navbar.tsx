@@ -27,12 +27,12 @@ const MENU_LINKS = [
         url: '/#my-experience',
     },
     {
-        name: 'Projects',
-        url: '/#selected-projects',
-    },
-    {
         name: 'Certifications',
         url: '/#certifications',
+    },
+    {
+        name: 'Projects',
+        url: '/#selected-projects',
     },
 ];
 
