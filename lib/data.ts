@@ -1,4 +1,4 @@
-import { IProject } from '@/types';
+import { ICertificate, IProject } from '@/types';
 
 export const GENERAL_INFO = {
     name: 'Fajar Tri Prasetyo',
@@ -9,7 +9,6 @@ export const GENERAL_INFO = {
     location: 'Bekasi / Jakarta, Indonesia',
     emailSubject: "Let's collaborate on a project",
     emailBody: 'Hi Fajar, I came across your portfolio and would like to connect...',
-    oldPortfolio: 'https://fajarprasetyo.github.io',
     githubProfile: 'https://github.com/FajarPrasetyo',
     linkedinProfile: 'https://www.linkedin.com/in/fajar-prasetyo-535775290/',
 };
@@ -17,7 +16,6 @@ export const GENERAL_INFO = {
 export const SOCIAL_LINKS = [
     { name: 'github', url: GENERAL_INFO.githubProfile },
     { name: 'linkedin', url: GENERAL_INFO.linkedinProfile },
-    { name: 'Old Version', url: GENERAL_INFO.oldPortfolio },
 ];
 
 export const MY_STACK = {
@@ -317,14 +315,24 @@ export const PROJECTS: IProject[] = [
 
 export const MY_EXPERIENCE = [
     {
-        title: 'Web Developer',
-        company: 'WGN Sport Center',
-        duration: 'Aug 2024 - Present',
+        title: 'Computer Lab Assistant',
+        company: 'Gunadarma University',
+        duration: 'Aug 2024 - Oct 2026',
     },
     {
-        title: 'Computer Lab Assistant & LSP Assessor Assistant',
-        company: 'Gunadarma University',
-        duration: 'Aug 2024 - Present',
+        title: 'Fullstack Web Developer',
+        company: 'SanKomputer',
+        duration: 'Jun 2026 - Jul 2026',
+    },
+    {
+        title: 'Fullstack Web Developer',
+        company: 'WGN Sport Center',
+        duration: 'Aug 2025 - Sep 2025',
+    },
+    {
+        title: 'IT Support',
+        company: 'PT Malikul Mulk Abadi (SPBU 34.17112)',
+        duration: 'Feb 2023 - Jun 2025',
     },
     {
         title: 'Bachelor of Computer Science - Information Systems (GPA: 3.71)',
@@ -335,5 +343,41 @@ export const MY_EXPERIENCE = [
         title: 'Software Engineering (RPL)',
         company: 'SMKN 1 Kota Bekasi',
         duration: '2019 - 2022',
+    },
+];
+
+export const MY_CERTIFICATES: ICertificate[] = [
+    {
+        title: 'Junior Web Programmer',
+        category: 'Professional Certification',
+        issuer: 'Badan Nasional Sertifikasi Profesi (BNSP)',
+        institution: 'LSP Universitas Gunadarma',
+        date: '15 July 2026',
+        credentialId: 'No. 62019 2514 5 0025475 2026',
+        validity: 'Valid for 3 years',
+        description:
+            'National competency certification in programming, covering data structures, user interface implementation, structured programming, debugging, and software documentation.',
+        tags: ['BNSP', 'Programming', 'Web Development'],
+        image: '/certificates/preview/bnsp-junior-web-programmer.webp',
+        imageWidth: 900,
+        imageHeight: 1239,
+        imagePosition: 'top',
+        pdf: '/certificates/bnsp-junior-web-programmer.pdf',
+    },
+    {
+        title: 'Intro to Software Engineering',
+        category: 'Course Certificate',
+        issuer: 'RevoU Coding Camp',
+        date: '23 October 2026',
+        credentialId: 'CCSE-191026-01-1-00004',
+        validity: 'Certificate of Attendance',
+        description:
+            'A one-week certified online course covering software engineering fundamentals, development workflows, and industry best practices.',
+        tags: ['Software Engineering', 'Coding Camp'],
+        image: '/certificates/preview/revou-intro-software-engineering.webp',
+        imageWidth: 1200,
+        imageHeight: 851,
+        imagePosition: 'center',
+        pdf: '/certificates/revou-intro-software-engineering.pdf',
     },
 ];

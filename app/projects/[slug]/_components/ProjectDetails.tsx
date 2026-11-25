@@ -199,7 +199,7 @@ const ProjectDetails = ({ project }: Props) => {
                                         className="text-xs font-anton uppercase tracking-widest"
                                         style={{ color: 'rgba(255,255,255,0.5)' }}
                                     >
-                                        Promo Video
+                                        Demo Preview
                                     </span>
                                     <span
                                         className="text-xs font-mono"

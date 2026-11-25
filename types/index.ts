@@ -15,6 +15,23 @@ export type Variant =
     | 'link'
     | 'no-color';
 
+export interface ICertificate {
+    title: string;
+    category: string;
+    issuer: string;
+    institution?: string;
+    date: string;
+    credentialId: string;
+    validity?: string;
+    description: string;
+    tags: string[];
+    image: string;
+    imageWidth: number;
+    imageHeight: number;
+    imagePosition?: 'top' | 'center';
+    pdf: string;
+}
+
 export interface IProject {
     title: string;
     year: number;
