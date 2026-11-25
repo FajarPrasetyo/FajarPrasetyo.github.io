@@ -7,6 +7,7 @@ import {
     Award,
     BadgeCheck,
     CalendarDays,
+    ChevronDown,
     ExternalLink,
     ShieldCheck,
     X,
@@ -16,9 +17,30 @@ import { MY_CERTIFICATES } from '@/lib/data';
 import { ICertificate } from '@/types';
 import { cn } from '@/lib/utils';
 
+const INITIAL_VISIBLE = 4;
+
 const Certificates = () => {
     const [active, setActive] = useState<ICertificate | null>(null);
     const [mounted, setMounted] = useState(false);
+    const [expanded, setExpanded] = useState(false);
+
+    const visibleCertificates = expanded
+        ? MY_CERTIFICATES
+        : MY_CERTIFICATES.slice(0, INITIAL_VISIBLE);
+
+    const toggleExpanded = () => {
+        if (expanded) {
+            setExpanded(false);
+            requestAnimationFrame(() => {
+                document
+                    .getElementById('certifications')
+                    ?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+            return;
+        }
+
+        setExpanded(true);
+    };
 
     useEffect(() => setMounted(true), []);
 
@@ -55,11 +77,15 @@ const Certificates = () => {
                     </span>
                 </div>
 
-                <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-                    {MY_CERTIFICATES.map((certificate) => (
+                <div className="grid gap-6 md:grid-cols-2">
+                    {visibleCertificates.map((certificate, index) => (
                         <article
                             key={certificate.title}
-                            className="certificate-card group relative flex flex-col overflow-hidden rounded-2xl border border-white/10 transition-all duration-500 hover:border-primary/40"
+                            className={cn(
+                                'certificate-card group relative flex flex-col overflow-hidden rounded-2xl border border-white/10 transition-all duration-500 hover:border-primary/40',
+                                index >= INITIAL_VISIBLE &&
+                                    'animate-in fade-in slide-in-from-bottom-4 duration-500',
+                            )}
                             style={{
                                 background:
                                     'linear-gradient(135deg, rgba(255,255,255,0.07) 0%, rgba(255,255,255,0.015) 100%)',
@@ -67,6 +93,14 @@ const Certificates = () => {
                                 WebkitBackdropFilter: 'blur(16px)',
                                 boxShadow:
                                     '0 8px 32px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.06)',
+                                animationDelay:
+                                    index >= INITIAL_VISIBLE
+                                        ? `${(index - INITIAL_VISIBLE) * 55}ms`
+                                        : undefined,
+                                animationFillMode:
+                                    index >= INITIAL_VISIBLE
+                                        ? 'backwards'
+                                        : undefined,
                             }}
                         >
                             <div className="relative h-56 shrink-0 overflow-hidden sm:h-60">
@@ -157,6 +191,36 @@ const Certificates = () => {
                         </article>
                     ))}
                 </div>
+
+                {MY_CERTIFICATES.length > INITIAL_VISIBLE && (
+                    <div className="mt-12 flex flex-col items-center gap-3">
+                        <button
+                            type="button"
+                            onClick={toggleExpanded}
+                            aria-expanded={expanded}
+                            className="group inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/[0.04] px-6 py-3 text-sm font-medium text-foreground backdrop-blur-md transition-all duration-300 hover:border-primary/40 hover:bg-primary/10 hover:text-primary"
+                        >
+                            {expanded
+                                ? 'Show less'
+                                : `Show ${
+                                      MY_CERTIFICATES.length - INITIAL_VISIBLE
+                                  } more credentials`}
+                            <ChevronDown
+                                size={16}
+                                className={cn(
+                                    'transition-transform duration-500',
+                                    expanded && 'rotate-180',
+                                )}
+                            />
+                        </button>
+
+                        <span className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+                            {expanded
+                                ? `Showing all ${MY_CERTIFICATES.length} credentials`
+                                : `Showing ${INITIAL_VISIBLE} of ${MY_CERTIFICATES.length} credentials`}
+                        </span>
+                    </div>
+                )}
             </div>
 
             {mounted &&
