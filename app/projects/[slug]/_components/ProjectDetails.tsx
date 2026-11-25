@@ -213,7 +213,10 @@ const ProjectDetails = ({ project }: Props) => {
                                     loop
                                     muted
                                     playsInline
-                                    className="w-full block"
+                                    controls
+                                    preload="metadata"
+                                    aria-label={`${project.title} promo video`}
+                                    className="w-full block bg-black/40"
                                     src={project.promoVideo}
                                 />
                             </div>

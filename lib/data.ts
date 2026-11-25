@@ -229,8 +229,11 @@ export const PROJECTS: IProject[] = [
         thumbnail: '/projects/thumbnail/bridge-ml.png',
         longThumbnail: '/projects/long/bridge-ml.png',
         images: [
+            '/projects/images/bridge-ml-1.png',
             '/projects/images/bridge-ml-designstrength.png',
             '/projects/images/bridge-ml-responratio.png',
+            '/projects/images/bridge-ml-2.png',
+            '/projects/images/bridge-ml-3.png',
         ],
         promoVideo: '/projects/videos/jembatan-crispdm-promo.mp4',
     },
