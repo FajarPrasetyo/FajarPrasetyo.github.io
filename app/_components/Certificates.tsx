@@ -172,6 +172,15 @@ const Certificates = () => {
                         />
 
                         <div className="relative z-10 flex max-h-[92dvh] w-full max-w-5xl flex-col overflow-hidden rounded-2xl border border-white/10 bg-background-light shadow-2xl md:flex-row">
+                            <button
+                                type="button"
+                                onClick={() => setActive(null)}
+                                className="absolute right-3 top-3 z-20 inline-flex size-9 items-center justify-center rounded-full border border-white/15 bg-black/50 backdrop-blur-md transition-colors hover:border-white/30 hover:text-primary"
+                                aria-label="Close certificate preview"
+                            >
+                                <X size={16} />
+                            </button>
+
                             <div
                                 className="relative flex min-h-[220px] flex-1 items-center justify-center overflow-hidden bg-black/40 p-4 sm:p-6"
                                 data-lenis-prevent
@@ -203,14 +212,6 @@ const Certificates = () => {
                                         <BadgeCheck size={13} />
                                         Verified credential
                                     </span>
-                                    <button
-                                        type="button"
-                                        onClick={() => setActive(null)}
-                                        className="inline-flex size-9 items-center justify-center rounded-full border border-white/10 bg-white/5 transition-colors hover:border-white/30 hover:text-primary"
-                                        aria-label="Close certificate preview"
-                                    >
-                                        <X size={16} />
-                                    </button>
                                 </div>
 
                                 <h3 className="font-anton text-3xl leading-none">
